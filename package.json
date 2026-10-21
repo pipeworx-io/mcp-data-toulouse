@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-data-toulouse",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Toulouse Métropole Open Data (data.toulouse-metropole.fr) — OpenDataSoft MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-ee89376ca31cbc696c8aea1aaef392ef3ae9d259c47db8d73c6e5ce06bb42a4c",
-    "sourceCommit": "56d3c46c09bb3078ffdbdbca992a93f406bcd382"
+    "sourceHash": "v1-81e4342bdacd9cae39a29091687a303f272c0f859742d76f4e922c8918042900",
+    "sourceCommit": "8355bf3d1eece256a62a89dba2278e7a77bebe07"
   }
 }
