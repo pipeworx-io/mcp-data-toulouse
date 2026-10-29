@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-data-toulouse",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Toulouse Métropole Open Data (data.toulouse-metropole.fr) — OpenDataSoft MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-data-toulouse": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "data-toulouse"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-data-toulouse.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/data-toulouse",
   "pipeworx": {
-    "sourceHash": "v1-067c790c9afd9c3cdc56c5798c0aa9b74a00c125dcff01e7de0a8ba493af177c",
-    "sourceCommit": "01241619b78233fd55d0e3612331499a63f03ae7"
+    "mode": "gateway",
+    "slug": "data-toulouse",
+    "gatewaySlug": "data-toulouse",
+    "sourceHash": "v1-970ddd41c947e53a52d50a0cb28fc3b970e9f8aa474e3e1a45f9434e49bf72cf",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
